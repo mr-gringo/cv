@@ -1,91 +1,81 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
     <title>Bohdan CV</title>
 </head>
 <body>
-    <table cellspacing="15">
-        <tr>
-            <td>
-                <img src="https://media.licdn.com/dms/image/v2/D4E03AQGktKo5uaggTw/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1708678386073?e=2147483647&v=beta&t=3DMUSr0TrNY2VMVUwZK2-IlB8cU_R2uekUFvlyujZ08" alt="" width="150" alt="Here is must be my photo">
-            </td>
-            <td>
-                <h1>Bohdan Zavoloka</h1>  
-                <p><em>I'm creator of this <strong>html site</strong></em></p>
-                <p><em>I love to travel, do some sport and programming</em></p>                
-            </td>
-        </tr>
-    </table>
+
+    <div class="container">
+        <div class="info">
+            <img src="avatar.jpeg" alt="Photo Bohdan" class="avatar">
+            
+            <div class="info-text">    
+                <h1>Bohdan Zavoloka</h1>
+                <p>Birth: 01/04/1995 (<strong>29 y.o.</strong>)</p>
+                <p>I'm living in <strong>Spain, Alicante</strong></p>
+
+                <h4>My Social Media</h4>
+                <a href="https://instagram.com/zavoloka.b" target="_blank">Instagram</a>
+                |
+                <a href="https://t.me/holafuego" target="_blank">Telegram</a>
+            </div>
+        </div>
+
+        <div class="card bg-yellow">
+            <h2>My Hobbies</h2>
+            <ul class="list">
+                <li>Travel</li>
+                <li>Riding</li>
+                <li>Sport</li>
+                <li>Video Games</li>
+            </ul>
+        </div>
 
 
-<hr>
+        <div class="card bg-green">
+            <h2>My Experience</h2>
+            <table class="table">
+                <tr>
+                    <th>Company</th>
+                    <th>Post</th>
+                    <th>Years</th>
+                </tr>
+                <tr>
+                    <td>Translator</td>
+                    <td>CharmDate Agency</td>
+                    <td>2017-2020</td>
+                </tr>
+                <tr>
+                    <td>Marketing and Business</td>
+                    <td>Marketplace "Wildberries"</td>
+                    <td>2020-2024</td>
+                </tr>
+            </table>
+        </div>
 
-<h2>My social media</h2>
-<ul type="square">
-    <li><a href="https://instagram.com/zavoloka.b" target="_blank">Instagram</a></li>
-    <li><a href="https://t.me/courius_gringo" target="_blank">Telegram</a></li>
-</ul>
+        <div class="contact">
+            <h2>Contact Me</h2>
+            <form action="/">
+                <div class="row">
+                    <div class="form-group">
+                        <label for="Your Name">Name:</label>
+                        <input type="Your Name" id="Your Name" placeholder="Text your name...">
+                    </div>
+                    <div class="form-group">               
+                        <label for="E-mail">E-mail:</label>
+                        <input type="Your E-mail" id="E-mail" placeholder="Text your e-mail...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Text">Your message:</label>
+                    <textarea id="Text" rows="3" cols="40"></textarea>
+                </div>
+                <input class="btn" type="submit" value="Send!">
+            </form>
+        </div>
 
-<hr>
-
-<h2>My hobbies</h2>
-<ol>
-    <li>hangout</li>
-    <li>drinking</li>
-    <li>travel</li>
-    <li>play games</li>
-</ol>
-
-<hr>
-
-<h2>My experience</h2>
-<table border="2">
-   <thead>
-    <tr>
-        <th>Company</th>
-        <th>Post</th>
-        <th>Year</th>
-    </tr> 
-   </thead>
-   <tbody>  
-    <tr>
-    <td>Beerhoff</td>
-    <td>Weiter</td>
-    <td>2015-2017</td>
-    </tr>
-    <tr>
-    <td>CharmDate</td>
-    <td>Translator</td>
-    <td>2017-2021</td>
-</tr>
-  </tbody>
- 
-    
-  
-
-</table>
-
+    </div>
 </body>
-<hr>
-<h2>Contact me</h2>
-<form action="/">
-    <label for="name">Your name:</label>
-  <input type="text" id="name" placeholder="Type your name..."> 
-</form>
-<br>
-<form>
-    <label for="E-mail">Your E-mail:</label>
-  <input type="text" id="E-mail" placeholder="Type your E-mail..."> 
-<br>
-<br>
-</form>
-
-<form>
-    <label for="Your message"> Your message</label>
-    <br>
-    <textarea id="text" rows="4" cols="40"></textarea>
-    <br>
-    <input type="submit" value="Contact!" id="">
-</form>
 </html>
